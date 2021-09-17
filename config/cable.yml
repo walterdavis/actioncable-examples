@@ -2,7 +2,10 @@
 #   url: redis://redis.example.com:6379
 
 local: &local
-  url: redis://localhost:6379
+  adapter: redis
+  url: redis://127.0.0.1:6379
+  channel_prefix: cable_test_production
 
 development: *local
 test: *local
+production: *local
