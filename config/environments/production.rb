@@ -78,5 +78,5 @@ Rails.application.configure do
   # Set Action Cable server url for consumer connection
   # config.action_cable.url = 'ws://cable.example.com:28080'
   config.action_cable.url = "/cable"
-  config.action_cable.allowed_request_origins = ["https://centos.walterdavisstudio.com"]
+  config.action_cable.allowed_request_origins = ["http://centos.walterdavisstudio.com"]
 end
