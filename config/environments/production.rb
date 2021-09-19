@@ -80,3 +80,5 @@ Rails.application.configure do
   config.action_cable.url = "/cable"
   config.action_cable.allowed_request_origins = ["http://centos.walterdavisstudio.com", "https://centos.walterdavisstudio.com", "http://165.227.198.84"]
 end
+
+ENV['']
