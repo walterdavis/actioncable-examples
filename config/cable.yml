@@ -4,11 +4,17 @@
 local: &local
   adapter: redis
   url: redis://localhost:6379
-  channel_prefix: cable_test_production
 
-development: *local
-test: *local
+development:
+  <<: *local
+  channel_prefix: cable_test_development
+
+test:
+  <<: *local
+  channel_prefix: cable_test_test
+
 production:
   <<: *local
   password: <%= Rails.application.secrets.redis_password %>
+  channel_prefix: cable_test_production
 
